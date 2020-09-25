@@ -41,7 +41,6 @@ def resampled_reaction_probability(react_prob,copy_length,n_copies):
 #----------------------------------------------------------------------------
 def calc_survival_prob_v3(react_prob,time,kao):
     # Calculate survival probability for contact pair
-    #tstart = pytime.time()
 
     log_surv = np.zeros(react_prob.shape)
     dt = np.diff(time)[0]
@@ -52,7 +51,6 @@ def calc_survival_prob_v3(react_prob,time,kao):
     surv_prob_ij = np.exp(log_surv)
 
     surv_prob = np.mean(surv_prob_ij,axis=0)
-    #print("Time = {}".format(pytime.time()-tstart))
     return surv_prob
 
 #----------------------------------------------------------------------------
@@ -103,6 +101,49 @@ def Cn_approx2_laplace(s,sigma,D,ka,c,n_mean):
 
 #----------------------------------------------------------------------------
 #----------------------------------------------------------------------------
+# Define model for fitting of exponential function
+def exp_model(t,theta0,theta1):
+    return theta0 * np.exp(theta1 * t)
+
+#----------------------------------------------------------------------------
+# Fit long-time limit of survival data to model
+def fit_survival_prob_nonlinear(t,surv,npoints=40000):
+    ##### Extrapolate survival prob w/ nonlinear regression model #####
+
+    # Choose range for fitting
+    surv_data = surv[-npoints:]
+    time_data = t[-npoints:]
+
+    # Set initial guess for parameters based on log-transform linear regression
+    lin_fit = np.polyfit(time_data,np.log(surv_data),1)
+
+    exponent_estimate = lin_fit[0]
+    prefactor_estimate = pow(10.,lin_fit[1])
+
+    # Fit model to data
+    p0 = [prefactor_estimate, exponent_estimate]
+    popt, pcov = curve_fit(exp_model,time_data,surv_data,p0)
+
+    return (popt, pcov)
+
+
+#----------------------------------------------------------------------------
+def fit_and_extrapolate_surv_prob(tdata,sdata,extrij,target_surv_prob=1e-4,npoints=40000):
+
+    popt_ij, pcov_ij = fit_survival_prob_nonlinear(tdata,sdata,npoints)
+
+    # Extrapolate survival data using nonlinear fit
+
+    final_time = tdata[-1] + (np.log(target_surv_prob) - np.log(sdata[-1]))/popt_ij[1]
+
+    dt = tdata[1]-tdata[0]
+    extrap_time_ij = np.linspace(tdata[-1]+dt,final_time,10000)
+    extrap_surv_ij = exp_model(extrap_time_ij,popt_ij[0],popt_ij[1])
+
+    return popt_ij, extrap_time_ij, extrap_surv_ij
+
+#----------------------------------------------------------------------------
+#----------------------------------------------------------------------------
 def process_quasireversible_simulations(kao,kdo,dt,dissocdatafile,unbound_data_files,coarsening=1,**kwargs):
 
     # Parse kwargs
@@ -125,6 +166,11 @@ def process_quasireversible_simulations(kao,kdo,dt,dissocdatafile,unbound_data_f
         ntraj = kwargs['ntraj']
     else:
         ntraj = None
+
+    if 'npoints' in kwargs: # number of data points to use in extrapolation fit for survival prob
+        npoints = kwargs['npoints']
+    else:
+        npoints = 40000
 
     # Read dissociation prob from accepted moves file header
     with open(dissocdatafile, 'r') as f:
@@ -180,6 +226,7 @@ def process_quasireversible_simulations(kao,kdo,dt,dissocdatafile,unbound_data_f
 
     # Extrapolate if surv_prob is greater than low val
     if surv_prob[-1] > target_surv_prob:
+        '''
         fit_window = [-10000,-1] 
         pfit = np.polyfit(datatime[fit_window[0]:fit_window[-1]:10],np.log(surv_prob[fit_window[0]:fit_window[-1]:10]),1) 
         
@@ -189,11 +236,15 @@ def process_quasireversible_simulations(kao,kdo,dt,dissocdatafile,unbound_data_f
         extrap_time = np.linspace(datatime[-1]+dt,final_time,100000)
         log_extrap_surv = np.polyval(pfit,extrap_time)
 
-
         surv_prob = np.hstack((surv_prob,np.exp(log_extrap_surv)))
         time = np.hstack((datatime,extrap_time))
-        
         extrap_surv = np.exp(log_extrap_surv)
+        '''
+        extrap_time, extrap_surv = fit_and_extrapolate_surv_prob(datatime,surv_prob,target_surv_prob,npoints)
+
+        surv_prob = np.hstack((surv_prob,extrap_surv))
+        time = np.hstack((datatime,extrap_time))
+        
     else:
         extrap_surv = surv_prob
         time = datatime
@@ -233,62 +284,6 @@ def process_quasireversible_simulations(kao,kdo,dt,dissocdatafile,unbound_data_f
     #return (kd, time, surv_prob, sep_prob, corr_func, tau_n, n_mean, n_var, coarsening)
     return out_dict
 
-#-----------------------------------------------------------------
-'''
-def process_reversible_data(datadirs,**kwargs):
-
-    if 'ntraj' in kwargs:
-        ntraj = kwargs['ntraj']
-    else:
-        ntraj = None
-
-    n_mean_r = []
-    n_var_r = []
-    surv_data = []
-    logsurv_data = []
-    event_density_data = []
-    for di in datadirs:
-        # Read dissociation prob from accepted moves file header
-        with open(di+'fluctuation_vs_tau_data.txt', 'r') as f:
-            header = f.readline()
-            split_header = header.split()
-            n_mean_r.append(float(split_header[4]))
-            n_var_r.append(float(split_header[6]))
-        fluct_data = np.loadtxt(di+'fluctuation_vs_tau_data.txt',skiprows=1)
-        if ntraj is None:
-            event_density = np.loadtxt(di+'survival_hist.txt')
-            log_event_density = np.loadtxt(di+'survival_hist_logrithmic.txt')
-        else:
-            event_density = np.loadtxt(di+'survival_hist_ntraj_{}.txt'.format(ntraj))
-            log_event_density = np.loadtxt(di+'survival_hist_logrithmic_ntraj_{}.txt'.format(ntraj))
-
-        # Normalize distributions to sum to 1
-        event_density[:,1] = event_density[:,1]/np.sum(event_density[:,1])
-
-        surv = np.ones(event_density.shape)
-        surv[:,0] = event_density[:,0]
-
-        surv[:,1] = 1. - np.cumsum(event_density[:,1])
-        #surv[1:,1] = 1. - cumtrapz(event_density[:,1],event_density[:,0])
-
-        surv_data.append(surv)
-        event_density_data.append(event_density)
-
-        logbinsurv = np.ones(log_event_density.shape)
-        logbinsurv[:,0] = pow(10.,log_event_density[:,0])
-        log_event_density[:,1] = log_event_density[:,1]/trapz(log_event_density[:,1],log_event_density[:,0])
-        logbinsurv[1:,1] = 1. - cumtrapz(log_event_density[:,1],log_event_density[:,0])
-        logsurv_data.append(logbinsurv)
-
-    nmean_rev = []
-    for si,lsi in zip(surv_data,logsurv_data):
-        mfpt_bind_l = trap_integrate(lsi[:,1],lsi[:,0])
-        mfpt_bind = trap_integrate(si[:,1],si[:,0])
-        mfpt_unbind = 1.
-        nmean_rev.append(mfpt_unbind/(mfpt_bind_l + mfpt_unbind))
-
-    return [n_mean_r, n_var_r, surv_data, logsurv_data, event_density_data, nmean_rev]
- '''
 #----------------------------------------------------------------------------
 def process_reversible_data_v2(datadirs,**kwargs):
 

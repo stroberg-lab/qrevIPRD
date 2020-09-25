@@ -1,0 +1,340 @@
+580
+0
+v2.0.1-0
+Configured kernel context with:
+--------------------------------
+ - kBT = 1
+ - periodic b.c. = (true, true, true)
+ - box size = (5, 5, 5)
+ - particle types:
+     *  particle type "C" with D=1
+     *  particle type "L" with D=1
+     *  particle type "S" with D=1
+ - potentials of order 2:
+     * for types "L" and "L"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "C" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "L" and "C"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "L" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "S" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "C" and "C"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+
+Simulation progress:   0%|          | 0/1000 [00:00<?, ?it/s]Simulation progress:   6%|▋         | 65/1000 [00:00<00:01, 644.32it/s]Simulation progress:  13%|█▎        | 134/1000 [00:00<00:01, 655.16it/s]Simulation progress:  20%|██        | 204/1000 [00:00<00:01, 667.45it/s]Simulation progress:  28%|██▊       | 275/1000 [00:00<00:01, 679.14it/s]Simulation progress:  35%|███▍      | 346/1000 [00:00<00:00, 685.58it/s]Simulation progress:  42%|████▏     | 417/1000 [00:00<00:00, 691.89it/s]Simulation progress:  49%|████▉     | 488/1000 [00:00<00:00, 696.09it/s]Simulation progress:  56%|█████▌    | 559/1000 [00:00<00:00, 698.82it/s]Simulation progress:  63%|██████▎   | 630/1000 [00:00<00:00, 700.45it/s]Simulation progress:  70%|██████▉   | 698/1000 [00:01<00:00, 675.11it/s]Simulation progress:  76%|███████▋  | 764/1000 [00:01<00:00, 660.64it/s]Simulation progress:  83%|████████▎ | 832/1000 [00:01<00:00, 665.63it/s]Simulation progress:  90%|█████████ | 900/1000 [00:01<00:00, 666.74it/s]Simulation progress:  97%|█████████▋| 969/1000 [00:01<00:00, 673.10it/s]100%|██████████| 1000/1000 [00:01<00:00, 673.10it/s]                    100%|██████████| 1000/1000 [00:01<00:00, 678.89it/s]
+[2020-09-24 18:26:10] [info] Simulation completed
+TRAJFILE=boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_0.h5
+SAVEFILE=unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_0.npy
+Processing trajectory: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_0.h5
+Reaction Probabilities saved to: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_0.npy
+Reaction Probability Computation Time = 1.06 seconds
+1
+v2.0.1-0
+Configured kernel context with:
+--------------------------------
+ - kBT = 1
+ - periodic b.c. = (true, true, true)
+ - box size = (5, 5, 5)
+ - particle types:
+     *  particle type "C" with D=1
+     *  particle type "L" with D=1
+     *  particle type "S" with D=1
+ - potentials of order 2:
+     * for types "L" and "L"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "C" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "L" and "C"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "L" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "S" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "C" and "C"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+
+Simulation progress:   0%|          | 0/1000 [00:00<?, ?it/s]Simulation progress:   6%|▋         | 65/1000 [00:00<00:01, 640.50it/s]Simulation progress:  13%|█▎        | 131/1000 [00:00<00:01, 645.76it/s]Simulation progress:  20%|██        | 200/1000 [00:00<00:01, 656.41it/s]Simulation progress:  27%|██▋       | 269/1000 [00:00<00:01, 665.85it/s]Simulation progress:  34%|███▍      | 338/1000 [00:00<00:00, 670.31it/s]Simulation progress:  41%|████      | 407/1000 [00:00<00:00, 675.50it/s]Simulation progress:  48%|████▊     | 476/1000 [00:00<00:00, 679.27it/s]Simulation progress:  55%|█████▍    | 545/1000 [00:00<00:00, 681.66it/s]Simulation progress:  61%|██████▏   | 614/1000 [00:00<00:00, 681.74it/s]Simulation progress:  68%|██████▊   | 680/1000 [00:01<00:00, 674.17it/s]Simulation progress:  75%|███████▍  | 747/1000 [00:01<00:00, 672.82it/s]Simulation progress:  82%|████████▏ | 815/1000 [00:01<00:00, 673.96it/s]Simulation progress:  88%|████████▊ | 885/1000 [00:01<00:00, 678.76it/s]Simulation progress:  95%|█████████▌| 954/1000 [00:01<00:00, 680.76it/s]100%|██████████| 1000/1000 [00:01<00:00, 680.76it/s]                    100%|██████████| 1000/1000 [00:01<00:00, 674.40it/s]
+[2020-09-24 18:26:14] [info] Simulation completed
+TRAJFILE=boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_1.h5
+SAVEFILE=unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_1.npy
+Processing trajectory: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_1.h5
+Reaction Probabilities saved to: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_1.npy
+Reaction Probability Computation Time = 0.95 seconds
+DELETING boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_1.h5
+2
+v2.0.1-0
+Configured kernel context with:
+--------------------------------
+ - kBT = 1
+ - periodic b.c. = (true, true, true)
+ - box size = (5, 5, 5)
+ - particle types:
+     *  particle type "C" with D=1
+     *  particle type "L" with D=1
+     *  particle type "S" with D=1
+ - potentials of order 2:
+     * for types "L" and "L"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "C" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "L" and "C"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "L" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "S" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "C" and "C"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+
+Simulation progress:   0%|          | 0/1000 [00:00<?, ?it/s]Simulation progress:   6%|▋         | 63/1000 [00:00<00:01, 624.83it/s]Simulation progress:  13%|█▎        | 128/1000 [00:00<00:01, 628.05it/s]Simulation progress:  20%|█▉        | 196/1000 [00:00<00:01, 641.99it/s]Simulation progress:  26%|██▋       | 265/1000 [00:00<00:01, 653.17it/s]Simulation progress:  33%|███▎      | 326/1000 [00:00<00:01, 637.66it/s]Simulation progress:  39%|███▉      | 393/1000 [00:00<00:00, 645.93it/s]Simulation progress:  46%|████▋     | 464/1000 [00:00<00:00, 663.09it/s]Simulation progress:  53%|█████▎    | 534/1000 [00:00<00:00, 672.39it/s]Simulation progress:  60%|██████    | 605/1000 [00:00<00:00, 683.04it/s]Simulation progress:  68%|██████▊   | 676/1000 [00:01<00:00, 690.59it/s]Simulation progress:  74%|███████▍  | 744/1000 [00:01<00:00, 685.06it/s]Simulation progress:  81%|████████  | 812/1000 [00:01<00:00, 676.38it/s]Simulation progress:  88%|████████▊ | 880/1000 [00:01<00:00, 675.38it/s]Simulation progress:  95%|█████████▌| 950/1000 [00:01<00:00, 680.08it/s]100%|██████████| 1000/1000 [00:01<00:00, 680.08it/s]                    100%|██████████| 1000/1000 [00:01<00:00, 670.20it/s]
+[2020-09-24 18:26:18] [info] Simulation completed
+TRAJFILE=boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_2.h5
+SAVEFILE=unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_2.npy
+Processing trajectory: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_2.h5
+Reaction Probabilities saved to: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_2.npy
+Reaction Probability Computation Time = 1.07 seconds
+DELETING boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_2.h5
+3
+v2.0.1-0
+Configured kernel context with:
+--------------------------------
+ - kBT = 1
+ - periodic b.c. = (true, true, true)
+ - box size = (5, 5, 5)
+ - particle types:
+     *  particle type "C" with D=1
+     *  particle type "L" with D=1
+     *  particle type "S" with D=1
+ - potentials of order 2:
+     * for types "L" and "L"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "C" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "L" and "C"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "L" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "S" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "C" and "C"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+
+Simulation progress:   0%|          | 0/1000 [00:00<?, ?it/s]Simulation progress:   7%|▋         | 68/1000 [00:00<00:01, 673.97it/s]Simulation progress:  14%|█▎        | 137/1000 [00:00<00:01, 678.68it/s]Simulation progress:  20%|██        | 204/1000 [00:00<00:01, 675.60it/s]Simulation progress:  27%|██▋       | 273/1000 [00:00<00:01, 679.82it/s]Simulation progress:  34%|███▍      | 343/1000 [00:00<00:00, 683.12it/s]Simulation progress:  41%|████▏     | 413/1000 [00:00<00:00, 686.50it/s]Simulation progress:  48%|████▊     | 484/1000 [00:00<00:00, 691.65it/s]Simulation progress:  56%|█████▌    | 555/1000 [00:00<00:00, 695.53it/s]Simulation progress:  62%|██████▎   | 625/1000 [00:00<00:00, 696.40it/s]Simulation progress:  70%|██████▉   | 695/1000 [00:01<00:00, 696.42it/s]Simulation progress:  76%|███████▋  | 763/1000 [00:01<00:00, 688.65it/s]Simulation progress:  83%|████████▎ | 832/1000 [00:01<00:00, 688.19it/s]Simulation progress:  90%|█████████ | 900/1000 [00:01<00:00, 684.72it/s]Simulation progress:  97%|█████████▋| 971/1000 [00:01<00:00, 691.76it/s]100%|██████████| 1000/1000 [00:01<00:00, 691.76it/s]                    100%|██████████| 1000/1000 [00:01<00:00, 687.89it/s]
+[2020-09-24 18:26:22] [info] Simulation completed
+TRAJFILE=boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_3.h5
+SAVEFILE=unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_3.npy
+Processing trajectory: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_3.h5
+Reaction Probabilities saved to: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_3.npy
+Reaction Probability Computation Time = 1.06 seconds
+DELETING boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_3.h5
+4
+v2.0.1-0
+Configured kernel context with:
+--------------------------------
+ - kBT = 1
+ - periodic b.c. = (true, true, true)
+ - box size = (5, 5, 5)
+ - particle types:
+     *  particle type "C" with D=1
+     *  particle type "L" with D=1
+     *  particle type "S" with D=1
+ - potentials of order 2:
+     * for types "L" and "L"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "C" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "L" and "C"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "L" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "S" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "C" and "C"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+
+Simulation progress:   0%|          | 0/1000 [00:00<?, ?it/s]Simulation progress:   7%|▋         | 68/1000 [00:00<00:01, 672.05it/s]Simulation progress:  14%|█▍        | 138/1000 [00:00<00:01, 678.09it/s]Simulation progress:  21%|██        | 208/1000 [00:00<00:01, 682.48it/s]Simulation progress:  27%|██▋       | 274/1000 [00:00<00:01, 674.86it/s]Simulation progress:  34%|███▍      | 343/1000 [00:00<00:00, 677.76it/s]Simulation progress:  41%|████      | 412/1000 [00:00<00:00, 680.76it/s]Simulation progress:  48%|████▊     | 482/1000 [00:00<00:00, 684.41it/s]Simulation progress:  55%|█████▌    | 551/1000 [00:00<00:00, 685.67it/s]Simulation progress:  62%|██████▏   | 621/1000 [00:00<00:00, 687.71it/s]Simulation progress:  69%|██████▉   | 688/1000 [00:01<00:00, 676.81it/s]Simulation progress:  75%|███████▌  | 754/1000 [00:01<00:00, 666.90it/s]Simulation progress:  82%|████████▏ | 823/1000 [00:01<00:00, 670.98it/s]Simulation progress:  89%|████████▉ | 892/1000 [00:01<00:00, 674.87it/s]Simulation progress:  96%|█████████▌| 960/1000 [00:01<00:00, 676.01it/s]100%|██████████| 1000/1000 [00:01<00:00, 676.01it/s]                    100%|██████████| 1000/1000 [00:01<00:00, 676.33it/s]
+[2020-09-24 18:26:26] [info] Simulation completed
+TRAJFILE=boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_4.h5
+SAVEFILE=unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_4.npy
+Processing trajectory: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_4.h5
+Reaction Probabilities saved to: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_4.npy
+Reaction Probability Computation Time = 1.18 seconds
+DELETING boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_4.h5
+5
+v2.0.1-0
+Configured kernel context with:
+--------------------------------
+ - kBT = 1
+ - periodic b.c. = (true, true, true)
+ - box size = (5, 5, 5)
+ - particle types:
+     *  particle type "C" with D=1
+     *  particle type "L" with D=1
+     *  particle type "S" with D=1
+ - potentials of order 2:
+     * for types "L" and "L"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "C" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "L" and "C"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "L" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "S" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "C" and "C"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+
+Simulation progress:   0%|          | 0/1000 [00:00<?, ?it/s]Simulation progress:   7%|▋         | 67/1000 [00:00<00:01, 665.14it/s]Simulation progress:  14%|█▎        | 135/1000 [00:00<00:01, 667.57it/s]Simulation progress:  20%|██        | 203/1000 [00:00<00:01, 670.95it/s]Simulation progress:  27%|██▋       | 271/1000 [00:00<00:01, 673.12it/s]Simulation progress:  34%|███▍      | 339/1000 [00:00<00:00, 674.37it/s]Simulation progress:  40%|████      | 401/1000 [00:00<00:00, 655.43it/s]Simulation progress:  46%|████▋     | 463/1000 [00:00<00:00, 642.50it/s]Simulation progress:  53%|█████▎    | 530/1000 [00:00<00:00, 649.79it/s]Simulation progress:  60%|██████    | 601/1000 [00:00<00:00, 664.75it/s]Simulation progress:  67%|██████▋   | 671/1000 [00:01<00:00, 672.82it/s]Simulation progress:  74%|███████▎  | 737/1000 [00:01<00:00, 665.69it/s]Simulation progress:  80%|████████  | 804/1000 [00:01<00:00, 665.76it/s]Simulation progress:  87%|████████▋ | 873/1000 [00:01<00:00, 670.08it/s]Simulation progress:  94%|█████████▍| 943/1000 [00:01<00:00, 676.69it/s]100%|██████████| 1000/1000 [00:01<00:00, 676.69it/s]                    100%|██████████| 1000/1000 [00:01<00:00, 667.13it/s]
+[2020-09-24 18:26:30] [info] Simulation completed
+TRAJFILE=boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_5.h5
+SAVEFILE=unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_5.npy
+Processing trajectory: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_5.h5
+Reaction Probabilities saved to: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_5.npy
+Reaction Probability Computation Time = 1.14 seconds
+DELETING boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_5.h5
+6
+v2.0.1-0
+Configured kernel context with:
+--------------------------------
+ - kBT = 1
+ - periodic b.c. = (true, true, true)
+ - box size = (5, 5, 5)
+ - particle types:
+     *  particle type "C" with D=1
+     *  particle type "L" with D=1
+     *  particle type "S" with D=1
+ - potentials of order 2:
+     * for types "L" and "L"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "C" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "L" and "C"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "L" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "S" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "C" and "C"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+
+Simulation progress:   0%|          | 0/1000 [00:00<?, ?it/s]Simulation progress:   7%|▋         | 67/1000 [00:00<00:01, 663.36it/s]Simulation progress:  14%|█▎        | 136/1000 [00:00<00:01, 671.03it/s]Simulation progress:  20%|██        | 205/1000 [00:00<00:01, 675.90it/s]Simulation progress:  27%|██▋       | 274/1000 [00:00<00:01, 678.75it/s]Simulation progress:  34%|███▍      | 344/1000 [00:00<00:00, 682.54it/s]Simulation progress:  41%|████      | 409/1000 [00:00<00:00, 669.65it/s]Simulation progress:  48%|████▊     | 476/1000 [00:00<00:00, 667.44it/s]Simulation progress:  54%|█████▍    | 543/1000 [00:00<00:00, 666.86it/s]Simulation progress:  61%|██████    | 612/1000 [00:00<00:00, 673.18it/s]Simulation progress:  68%|██████▊   | 682/1000 [00:01<00:00, 678.19it/s]Simulation progress:  75%|███████▌  | 752/1000 [00:01<00:00, 682.14it/s]Simulation progress:  82%|████████▏ | 819/1000 [00:01<00:00, 678.34it/s]Simulation progress:  89%|████████▊ | 886/1000 [00:01<00:00, 672.65it/s]Simulation progress:  95%|█████████▌| 953/1000 [00:01<00:00, 667.62it/s]100%|██████████| 1000/1000 [00:01<00:00, 667.62it/s]                    100%|██████████| 1000/1000 [00:01<00:00, 672.56it/s]
+[2020-09-24 18:26:34] [info] Simulation completed
+TRAJFILE=boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_6.h5
+SAVEFILE=unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_6.npy
+Processing trajectory: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_6.h5
+Reaction Probabilities saved to: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_6.npy
+Reaction Probability Computation Time = 1.05 seconds
+DELETING boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_6.h5
+7
+v2.0.1-0
+Configured kernel context with:
+--------------------------------
+ - kBT = 1
+ - periodic b.c. = (true, true, true)
+ - box size = (5, 5, 5)
+ - particle types:
+     *  particle type "C" with D=1
+     *  particle type "L" with D=1
+     *  particle type "S" with D=1
+ - potentials of order 2:
+     * for types "L" and "L"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "C" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "L" and "C"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "L" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "S" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "C" and "C"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+
+Simulation progress:   0%|          | 0/1000 [00:00<?, ?it/s]Simulation progress:   7%|▋         | 67/1000 [00:00<00:01, 666.47it/s]Simulation progress:  14%|█▎        | 136/1000 [00:00<00:01, 673.04it/s]Simulation progress:  21%|██        | 206/1000 [00:00<00:01, 678.19it/s]Simulation progress:  27%|██▋       | 273/1000 [00:00<00:01, 675.65it/s]Simulation progress:  34%|███▍      | 339/1000 [00:00<00:00, 670.37it/s]Simulation progress:  41%|████      | 408/1000 [00:00<00:00, 673.85it/s]Simulation progress:  48%|████▊     | 478/1000 [00:00<00:00, 679.45it/s]Simulation progress:  55%|█████▍    | 548/1000 [00:00<00:00, 682.82it/s]Simulation progress:  62%|██████▏   | 619/1000 [00:00<00:00, 689.18it/s]Simulation progress:  69%|██████▉   | 690/1000 [00:01<00:00, 693.26it/s]Simulation progress:  76%|███████▌  | 760/1000 [00:01<00:00, 695.20it/s]Simulation progress:  83%|████████▎ | 829/1000 [00:01<00:00, 692.56it/s]Simulation progress:  90%|████████▉ | 898/1000 [00:01<00:00, 690.11it/s]Simulation progress:  97%|█████████▋| 967/1000 [00:01<00:00, 688.39it/s]100%|██████████| 1000/1000 [00:01<00:00, 688.39it/s]                    100%|██████████| 1000/1000 [00:01<00:00, 682.17it/s]
+[2020-09-24 18:26:39] [info] Simulation completed
+TRAJFILE=boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_7.h5
+SAVEFILE=unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_7.npy
+Processing trajectory: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_7.h5
+Reaction Probabilities saved to: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_7.npy
+Reaction Probability Computation Time = 1.00 seconds
+DELETING boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_7.h5
+8
+v2.0.1-0
+Configured kernel context with:
+--------------------------------
+ - kBT = 1
+ - periodic b.c. = (true, true, true)
+ - box size = (5, 5, 5)
+ - particle types:
+     *  particle type "C" with D=1
+     *  particle type "L" with D=1
+     *  particle type "S" with D=1
+ - potentials of order 2:
+     * for types "L" and "L"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "C" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "L" and "C"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "L" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "S" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "C" and "C"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+
+Simulation progress:   0%|          | 0/1000 [00:00<?, ?it/s]Simulation progress:   7%|▋         | 67/1000 [00:00<00:01, 667.74it/s]Simulation progress:  14%|█▎        | 135/1000 [00:00<00:01, 670.78it/s]Simulation progress:  20%|██        | 204/1000 [00:00<00:01, 675.24it/s]Simulation progress:  27%|██▋       | 271/1000 [00:00<00:01, 671.15it/s]Simulation progress:  34%|███▍      | 338/1000 [00:00<00:00, 669.04it/s]Simulation progress:  41%|████      | 407/1000 [00:00<00:00, 674.96it/s]Simulation progress:  48%|████▊     | 476/1000 [00:00<00:00, 677.40it/s]Simulation progress:  55%|█████▍    | 545/1000 [00:00<00:00, 680.63it/s]Simulation progress:  61%|██████▏   | 614/1000 [00:00<00:00, 682.15it/s]Simulation progress:  68%|██████▊   | 683/1000 [00:01<00:00, 683.29it/s]Simulation progress:  75%|███████▌  | 751/1000 [00:01<00:00, 681.41it/s]Simulation progress:  82%|████████▏ | 819/1000 [00:01<00:00, 680.15it/s]Simulation progress:  89%|████████▉ | 888/1000 [00:01<00:00, 682.18it/s]Simulation progress:  96%|█████████▌| 956/1000 [00:01<00:00, 676.45it/s]100%|██████████| 1000/1000 [00:01<00:00, 676.45it/s]                    100%|██████████| 1000/1000 [00:01<00:00, 674.33it/s]
+[2020-09-24 18:26:43] [info] Simulation completed
+TRAJFILE=boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_8.h5
+SAVEFILE=unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_8.npy
+Processing trajectory: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_8.h5
+Reaction Probabilities saved to: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_8.npy
+Reaction Probability Computation Time = 1.02 seconds
+DELETING boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_8.h5
+9
+v2.0.1-0
+Configured kernel context with:
+--------------------------------
+ - kBT = 1
+ - periodic b.c. = (true, true, true)
+ - box size = (5, 5, 5)
+ - particle types:
+     *  particle type "C" with D=1
+     *  particle type "L" with D=1
+     *  particle type "S" with D=1
+ - potentials of order 2:
+     * for types "L" and "L"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "C" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "L" and "C"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "L" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "S" and "S"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "C" and "C"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+
+Simulation progress:   0%|          | 0/1000 [00:00<?, ?it/s]Simulation progress:   7%|▋         | 68/1000 [00:00<00:01, 678.74it/s]Simulation progress:  14%|█▎        | 137/1000 [00:00<00:01, 681.41it/s]Simulation progress:  20%|██        | 205/1000 [00:00<00:01, 679.39it/s]Simulation progress:  27%|██▋       | 274/1000 [00:00<00:01, 681.65it/s]Simulation progress:  34%|███▍      | 344/1000 [00:00<00:00, 686.24it/s]Simulation progress:  42%|████▏     | 415/1000 [00:00<00:00, 691.95it/s]Simulation progress:  49%|████▊     | 486/1000 [00:00<00:00, 695.98it/s]Simulation progress:  56%|█████▌    | 557/1000 [00:00<00:00, 697.88it/s]Simulation progress:  63%|██████▎   | 628/1000 [00:00<00:00, 699.93it/s]Simulation progress:  70%|██████▉   | 699/1000 [00:01<00:00, 700.48it/s]Simulation progress:  77%|███████▋  | 770/1000 [00:01<00:00, 700.83it/s]Simulation progress:  84%|████████▍ | 839/1000 [00:01<00:00, 693.74it/s]Simulation progress:  91%|█████████ | 908/1000 [00:01<00:00, 685.41it/s]Simulation progress:  98%|█████████▊| 976/1000 [00:01<00:00, 682.48it/s]100%|██████████| 1000/1000 [00:01<00:00, 682.48it/s]                    100%|██████████| 1000/1000 [00:01<00:00, 687.85it/s]
+[2020-09-24 18:26:47] [info] Simulation completed
+TRAJFILE=boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_9.h5
+SAVEFILE=unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_9.npy
+Processing trajectory: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_9.h5
+Reaction Probabilities saved to: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_9.npy
+Reaction Probability Computation Time = 0.98 seconds
+DELETING boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/LigandDiffusion_unbound_out_bulk_index_9.h5
+updating: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_0.npy (deflated 96%)
+updating: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_1.npy (deflated 99%)
+updating: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_2.npy (deflated 96%)
+updating: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_3.npy (deflated 97%)
+updating: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_4.npy (deflated 92%)
+updating: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_5.npy (deflated 93%)
+updating: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_6.npy (deflated 99%)
+updating: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_7.npy (deflated 99%)
+updating: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_8.npy (deflated 97%)
+updating: boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0/unbound_simulations_fine_output/unbound_reaction_event_density_nL_2_9.npy (deflated 99%)

@@ -1,0 +1,32 @@
+boxsize_5_5_5/run_bulk_nL2_nC1/trajectory_0
+8
+Configured kernel context with:
+--------------------------------
+ - kBT = 1
+ - periodic b.c. = (true, true, true)
+ - box size = (5, 5, 5)
+ - particle types:
+     *  particle type "C" with D=1
+     *  particle type "L" with D=1
+     *  particle type "SL" with D=0.793701
+ - potentials of order 2:
+     * for types "L" and "L"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "C" and "SL"
+         * 12-6-Lennard-Jones potential with cutoff=2.51984, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "L" and "C"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "L" and "SL"
+         * 12-6-Lennard-Jones potential with cutoff=2.51984, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "SL" and "SL"
+         * 12-6-Lennard-Jones potential with cutoff=2.82843, epsilon=0.666667, k=2.66667, and with energy shift
+     * for types "C" and "C"
+         * 12-6-Lennard-Jones potential with cutoff=2.24492, epsilon=0.666667, k=2.66667, and with energy shift
+
+Simulation progress:   0%|          | 0/10000 [00:00<?, ?it/s]Simulation progress:  16%|█▌        | 1570/10000 [00:00<00:00, 15692.76it/s]Simulation progress:  33%|███▎      | 3252/10000 [00:00<00:00, 16013.69it/s]Simulation progress:  50%|████▉     | 4970/10000 [00:00<00:00, 16336.02it/s]Simulation progress:  66%|██████▋   | 6630/10000 [00:00<00:00, 16410.09it/s]Simulation progress:  83%|████████▎ | 8319/10000 [00:00<00:00, 16550.65it/s]100%|██████████| 10000/10000 [00:00<00:00, 16550.65it/s]                    100%|██████████| 10000/10000 [00:00<00:00, 16623.44it/s]
+[2020-09-24 18:26:06] [info] Simulation completed
+**********************************************
+Accepted/Total trials: 579/801
+Acceptance Probability: 0.72
+Sampling Time/Molecular Timescale: 8.0 independent samples
+**********************************************
