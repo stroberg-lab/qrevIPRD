@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import readdy
 from scipy import interpolate
 from scipy.integrate import trapz, cumtrapz, quadrature
+from scipy.optimize import curve_fit
 import glob
 import time as timepy
 
@@ -128,7 +129,7 @@ def fit_survival_prob_nonlinear(t,surv,npoints=40000):
 
 
 #----------------------------------------------------------------------------
-def fit_and_extrapolate_surv_prob(tdata,sdata,extrij,target_surv_prob=1e-4,npoints=40000):
+def fit_and_extrapolate_surv_prob(tdata,sdata,target_surv_prob=1e-4,npoints=40000):
 
     popt_ij, pcov_ij = fit_survival_prob_nonlinear(tdata,sdata,npoints)
 
@@ -240,7 +241,7 @@ def process_quasireversible_simulations(kao,kdo,dt,dissocdatafile,unbound_data_f
         time = np.hstack((datatime,extrap_time))
         extrap_surv = np.exp(log_extrap_surv)
         '''
-        extrap_time, extrap_surv = fit_and_extrapolate_surv_prob(datatime,surv_prob,target_surv_prob,npoints)
+        popt_ij, extrap_time, extrap_surv = fit_and_extrapolate_surv_prob(datatime,surv_prob,target_surv_prob,npoints)
 
         surv_prob = np.hstack((surv_prob,extrap_surv))
         time = np.hstack((datatime,extrap_time))
