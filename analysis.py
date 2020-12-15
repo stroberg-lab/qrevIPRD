@@ -263,9 +263,9 @@ def process_quasireversible_simulations(kao,kdo,dt,dissocdatafile,unbound_data_f
 
     # Calculate correlation function from separation probability
     pstar_star = 1. - sep_prob
-    p0 = n_mean
-    n_varC = p0 * (pstar_star[0] - p0)
-    corr_func = p0 * (pstar_star - p0)
+    #p0 = n_mean
+    #n_varC = p0 * (pstar_star[0] - p0)
+    corr_func = n_mean * (pstar_star - n_mean)
 
     # Calculate correlation time directly from definition in Kaizu 2014 supp. equation S8
     tau_n = 1./n_var * trap_integrate(corr_func,time[::coarsening])
